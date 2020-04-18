@@ -3,10 +3,8 @@ require 'yaml'
 require 'pry'
 
 
-  # code goes here
-
+  
   def load_library(emoticons)
-    # code goes here	  # code goes here
 
   inner_hash = {}
   other_inner_hash = {}
@@ -30,7 +28,7 @@ require 'pry'
   end
 
 def get_japanese_emoticon(emoticons, get_emoticon)
-  # code goes here
+
   load_library(emoticons)["get_emoticon"].each do |k, v|
       if get_emoticon == k
         return v
@@ -45,7 +43,7 @@ def get_japanese_emoticon(emoticons, get_emoticon)
 
 
 def get_english_meaning(emoticons, get_meaning)
-  # code goes here
+  
   load_library(emoticons)["get_meaning"].each do |k, v|
       if get_meaning == k
         return v
